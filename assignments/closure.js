@@ -1,6 +1,15 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+function multiFunc(x) {
+  return function(y) {
+    return x * y;
+  }
+}
 
+const by5 = multiFunc(5);
+const by10 = multiFunc(10);
+
+console.log(by10(2));
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
